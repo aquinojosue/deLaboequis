@@ -14,4 +14,8 @@ class Cliente {
         telefono()
         dateCreated()
     }
+
+    String toString(){
+        return String.format("[%s] - %s", dui,nombre_cliente)
+    }
 }

@@ -7,4 +7,8 @@ class Tecnico {
         nombre_tecnico()
         codigo_empleado()
     }
+
+    String toString(){
+        return String.format("[%s] %s", codigo_empleado, nombre_tecnico)
+    }
 }
