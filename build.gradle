@@ -1,6 +1,6 @@
 buildscript {
     repositories {
-        maven { url "https://repo.grails.org/grails/core" }
+        maven { url "https://repo.grails.org/artifactory/core" }
     }
     dependencies {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
@@ -22,7 +22,7 @@ apply plugin:"com.github.erdi.webdriver-binaries"
 apply plugin:"org.grails.grails-gsp"
 
 repositories {
-    maven { url "https://repo.grails.org/grails/core" }
+    maven { url "https://repo.grails.org/artifactory/core" }
 }
 
 configurations {
@@ -113,6 +113,10 @@ tasks.withType(Test) {
     systemProperty "webdriver.gecko.driver", System.getProperty('webdriver.gecko.driver')
 }
 
+
+dependencies {
+  compile 'com.github.jsimone:webapp-runner:8.5.11.3'
+}
 
 task stage() {
     dependsOn clean, war
