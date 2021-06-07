@@ -103,7 +103,7 @@ dataSource:
     driverClassName: com.mysql.cj.jdbc.Driver
     dialect: org.hibernate.dialect.MySQL5InnoDBDialect
     username: delaboequis
-    password: 'admin'
+    password: 'delabo1234'
 
 environments:
     development:
@@ -117,7 +117,7 @@ environments:
     production:
         dataSource:
             dbCreate: none
-            url: jdbc:mysql://db:3306/delaboequis
+            url: jdbc:mysql://f43bfcb-1036-4388-ac44-fcb2f961f6ae.delaboequis-5973.mysql.dbs.scalingo.com:35200/delaboequis_5973?useSSL=true&verifyServerCertificate=false
             properties:
                 jmxEnabled: true
                 initialSize: 5
