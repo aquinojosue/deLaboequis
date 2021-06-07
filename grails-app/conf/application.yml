@@ -116,7 +116,7 @@ environments:
             url: jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
     production:
         dataSource:
-            dbCreate: none
+            dbCreate: update
             url: jdbc:mysql://f43bfcb-1036-4388-ac44-fcb2f961f6ae.delaboequis-5973.mysql.dbs.scalingo.com:35200/delaboequis_5973?useSSL=true&verifyServerCertificate=false
             properties:
                 jmxEnabled: true
